@@ -30,3 +30,47 @@ userF({
     name: 'PP',
     age: 50
 })
+
+// Clase 8
+
+// Spread operator
+
+let usuario = [0,1,23];
+let corregir = [...usuario];
+corregir[2] = 2;
+console.log(usuario);
+console.log(corregir);
+console.log(usuario == corregir);
+
+let numeros = [4,5,6];
+let arrayCompleto = [...corregir, 3, ...numeros]; // Como añadir elementos y unir arrays.
+console.log(arrayCompleto);
+
+let subElementos = [0,1,2, [3,4], 5]; // Cuidado con la copia en diferentes de profundidad.
+let copyElementos = [...subElementos];
+console.log(subElementos);
+console.log(copyElementos);
+console.log(subElementos[3] === copyElementos[3]);
+let nuevosElementos = structuredClone(subElementos);
+console.log(nuevosElementos);
+console.log(subElementos[3] === nuevosElementos[3]);
+
+// Rest
+
+function newUsuario ({name, age, id, ...basura}) {
+    let user = {
+        name: name,
+        age: age,
+        id: id
+    }
+    console.log(user);
+    console.log(basura);
+}
+
+newUsuario({
+    name: 'Jonathan',
+    age: 20,
+    id: 152015,
+    password: 150,
+    pago: 150000000
+});
