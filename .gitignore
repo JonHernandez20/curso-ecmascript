@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,visualstudio,linux,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,visualstudiocode,visualstudio,linux,macos,windows
 
@@ -50,6 +51,8 @@ Temporary Items
 *.icloud
 
 ### Node ###
+=======
+>>>>>>> ed0184438a41a756c9505c919bc2a0362c5007c5
 # Logs
 logs
 *.log
@@ -154,6 +157,10 @@ dist
 
 # vuepress v2.x temp and cache directory
 .temp
+<<<<<<< HEAD
+=======
+.cache
+>>>>>>> ed0184438a41a756c9505c919bc2a0362c5007c5
 
 # Docusaurus cache and generated files
 .docusaurus
@@ -179,6 +186,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+<<<<<<< HEAD
 
 ### Node Patch ###
 # Serverless Webpack directories
@@ -627,3 +635,5 @@ FodyWeavers.xsd
 jspm_packages
 
 package.json
+=======
+>>>>>>> ed0184438a41a756c9505c919bc2a0362c5007c5
